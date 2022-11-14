@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&family=Sriracha&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    background-color:  hsl(212, 45%, 89%);
+}
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+article#card{
+    display: block;
+    background-color: white;
+    width: 270px;
+    height: 450px;
+    margin: auto;
+    border-radius: 10px;
+
+    /* Posicionamento ao centro */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+article#card > div#qr{
+    display: block;
+    background-image: url(../images/image-qr-code.png); 
+    background-size: cover;
+    background-position: center center;
+    width: 90%;
+    height: 55%;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+article#card > div#legenda{
+    display: block;
+    height: 45%;
+    text-align: center;
+    margin: 5px 15px;
+}
+
+div#legenda > h1{
+    font-size: 1.3em;
+    color:  hsl(218, 44%, 22%);
+    margin-bottom: 15px;
+}
+
+div#legenda > p{
+    font-size: 0.8em;
+    color: hsl(220, 15%, 55%);
+}
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
